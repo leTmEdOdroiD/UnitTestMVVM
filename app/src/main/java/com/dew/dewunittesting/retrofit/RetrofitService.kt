@@ -24,7 +24,7 @@ interface RetrofitService {
                         OkHttpClient.Builder().addInterceptor(MockInterceptor())
                             .addInterceptor(loggingInterceptor).build()
                     )
-                    .baseUrl("https://yoururl.com/")
+                    .baseUrl("https://letmedo.in/")
                     .addConverterFactory(GsonConverterFactory.create(GsonBuilder().setLenient().create()))
                     .build()
                 retrofitService = retrofit.create(RetrofitService::class.java)
